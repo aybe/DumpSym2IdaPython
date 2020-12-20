@@ -23,11 +23,11 @@ Good results:
 
 - Destruction Derby (Japan) `DEMOLISH.SYM`
 - Hi-Octane (Europe) `MAIN.SYM`
-- Twisted Metal (NTSC-J) `PSX.SYM`
+- Twisted Metal (Japan) `PSX.SYM`
 
 Bad results:
 
-- Wipeout XL Beta (NTSC-U/C) `NTSC.SYM`
+- Wipeout XL Beta (USA) `NTSC.SYM`
 
 Even though this tool doesn't implement all tags, a proper SYM file should tag 99% of the methods in IDA.
 
