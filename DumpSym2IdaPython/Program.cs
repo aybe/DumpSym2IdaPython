@@ -71,8 +71,6 @@ namespace DumpSymIdaPython
 
         private static List<Symbol> CreateSymbolsList(Dictionary<string, List<uint>> map, string prefix)
         {
-            prefix ??= "__";
-
             var symbols = new List<Symbol>();
 
             foreach (var (name, addresses) in map)
@@ -116,10 +114,10 @@ namespace DumpSymIdaPython
         [Option('o', "target", Required = false, HelpText = "Target file to write IDA script to, if not set, outputs to console.")]
         public string Target { get; set; }
 
-        [Option('p', "prefix", Required = false, HelpText = "Prefix to prepend to symbol name, default is __.", Default = "__")]
+        [Option('p', "prefix", Required = false, HelpText = "Prefix to prepend to symbol name.")]
         public string Prefix { get; set; }
 
-        [Option('s', "sorted", Required = false, HelpText = "Order symbols by their address, default is true.")]
+        [Option('s', "sorted", Required = false, HelpText = "Order symbols by their address.")]
         public bool Sorted { get; set; }
     }
 
