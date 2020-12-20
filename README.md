@@ -45,6 +45,6 @@ Reverse-engineering of dumpsym by lab313ru:
 
 https://github.com/lab313ru/dumpsym_src
 
-Visual Studio solution + Windows build of dumpsym:
+Visual Studio solution for building dumpsym for Windows:
 
 https://github.com/aybe/dumpsym_src
