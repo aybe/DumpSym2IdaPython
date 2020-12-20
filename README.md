@@ -17,9 +17,9 @@ Using `--prefix` and `--sorted` are recommended so that you can:
 - easily differentatiate changes brought by you VS initial IDA analysis
 - process them in file order for easily fixing tail byte errors
 
-Your mileage may vary, some games will produce good results, some won't, e.g.
+Your mileage may vary, some games will produce good results, some won't, e.g.:
 
 - `PSX.SYM` in Twisted Metal (NTSC-J) seems to be correct
 - `NTSC.SYM` in Wipeout XL Beta (NTSC-U/C) is definitely not right
 
-In short, don't think that because you have some SYM file that they're good, they might just be a leftover from a previous build.
+In short, some SYM files you can find just appear to be a leftover for a previous build. 😭
