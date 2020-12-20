@@ -37,4 +37,14 @@ In the case of Wipeout XL, the SYM file is five days newer than the EXE, that do
 
 ## Links
 
+List of games with debug symbols:
+
 https://www.retroreversing.com/ps1-debug-symbols
+
+Reverse-engineering of dumpsym by lab313ru:
+
+https://github.com/lab313ru/dumpsym_src
+
+Visual Studio solution + Windows build of dumpsym:
+
+https://github.com/aybe/dumpsym_src
