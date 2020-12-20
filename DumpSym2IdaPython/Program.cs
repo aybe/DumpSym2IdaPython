@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using CommandLine;
 
-namespace DumpSymIdaPython
+namespace DumpSym2IdaPython
 {
     internal static class Program
     {
@@ -94,7 +94,7 @@ namespace DumpSymIdaPython
 
             writer.WriteLine("import idc");
             writer.WriteLine("import datetime");
-            writer.WriteLine("print(\"DumpSymIda is about to set symbol names...\")");
+            writer.WriteLine("print(\"DumpSym2IdaPython is about to set symbol names...\")");
             writer.WriteLine("print(datetime.datetime.now())");
 
             var array = sorted ? list.OrderBy(s => s.Address).ToList() : list;
