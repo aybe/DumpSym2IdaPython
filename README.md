@@ -6,7 +6,7 @@ Converts DUMPSYM output to an IDAPython script for easy symbol renaming
 
 This small utility parses the output of SN-Systems' `DUMPSYM.EXE` found in the official PSX SDK.
 
-It will extract all `LABEL` tags and generate an IDAPython for batch renaming symbols in IDA.
+It will extract all `LABEL` tags and generate an IDAPython script for batch rename of symbols in IDA.
 
 Example:
 
@@ -14,12 +14,27 @@ Example:
 
 Using `--prefix` and `--sorted` are recommended so that you can:
 
-- easily differentatiate changes brought by you VS initial IDA analysis
-- process them in file order for easily fixing tail byte errors
+- easily differentatiate changes brought by you against initial IDA analysis
+- process them in file order for easily fixing tail byte errors because there will be some
 
-Your mileage may vary, some games will produce good results, some won't, e.g.:
+Your mileage may vary however, for some games it works well, for some it doesn't at all:
 
-- `PSX.SYM` in Twisted Metal (NTSC-J) seems to be correct
-- `NTSC.SYM` in Wipeout XL Beta (NTSC-U/C) is definitely not right
+Good results:
 
-In short, some SYM files you can find just appear to be a leftover for a previous build. 😭
+- Destruction Derby (Japan) `DEMOLISH.SYM`
+- Hi-Octane (Europe) `MAIN.SYM`
+- Twisted Metal (NTSC-J) `PSX.SYM`
+
+Bad results:
+
+- Wipeout XL Beta (NTSC-U/C) `NTSC.SYM`
+
+Even though this tool doesn't implement all tags, a proper SYM file should tag 99% of the methods in IDA.
+
+If it's not the case then for sure you have a SYM file for a different build, don't understimate that fact.
+
+In the case of Wipeout XL, the SYM file is five days newer than the EXE, that doesn't makes sense at all.
+
+## Links
+
+https://www.retroreversing.com/ps1-debug-symbols
