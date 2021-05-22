@@ -35,6 +35,10 @@ If it's not the case then for sure you have a SYM file for a different build, do
 
 In the case of Wipeout XL, the SYM file is five days newer than the EXE, that doesn't makes sense at all.
 
+### Solving tail byte errors
+
+Define the region a little before symbol location as data using <kbd>D</kbd> key, run the script again, the symbol should be defined now.
+
 ## Links
 
 List of games with debug symbols:
